@@ -20,6 +20,8 @@
 
 # OrangeFox Settings
 OF_FLASHLIGHT_ENABLE :- 1
+# OF_FL_PATH1 :- 
+# OF_FL_PATH2 :- 
 OF_HIDE_NOTCH :- 0
 OF_ALLOW_DISABLE_NAVBAR :- 0
 
@@ -32,3 +34,4 @@ OF_CLOCK_POS :- 1
 
 # Miscellaneous
 OF_SPLASH_MAX_SIZE :- 4096
+FOX_VERSION :- "R11.1"

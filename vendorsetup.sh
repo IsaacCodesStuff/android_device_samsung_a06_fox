@@ -1,4 +1,4 @@
-=#
+#
 #	This file is part of the OrangeFox Recovery Project
 # 	Copyright (C) 2020-2021 The OrangeFox Recovery Project
 #
@@ -41,13 +41,12 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  	export LC_ALL="C"
 
     export OF_MAINTAINER="IsaacCodesStuff"
-	export FOX_BUILD_TYPE="Stable"
+	export FOX_BUILD_TYPE="Stable - Unofficial"
 	export FOX_VERSION :- "R11.1"
 
     export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
     export FOX_USE_NANO_EDITOR=1
  	export FOX_DELETE_MAGISK_ADDON=1
-    export OF_FLASHLIGHT_ENABLE=1
 	export OF_HIDE_NOTCH=1
 	export OF_CLOCK_POS=1
 	export OF_ALLOW_DISABLE_NAVBAR=0

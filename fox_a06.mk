@@ -18,10 +18,7 @@
 # 	Please maintain this if you use this script or any part of it
 #
 
-# OrangeFox Settings
-OF_FLASHLIGHT_ENABLE :- 1
-# OF_FL_PATH1 :- 
-# OF_FL_PATH2 :- 
+# OrangeFox Settings 
 OF_HIDE_NOTCH :- 0
 OF_ALLOW_DISABLE_NAVBAR :- 0
 

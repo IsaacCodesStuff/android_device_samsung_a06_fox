@@ -41,8 +41,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  	export LC_ALL="C"
 
     export OF_MAINTAINER="IsaacCodesStuff"
-	export FOX_BUILD_TYPE="Stable - Unofficial"
-	export FOX_VERSION="R11.1"
+	export FOX_BUILD_TYPE="Unofficial"
+    export FOX_MAINTAINER_PATCH_VERSION="V4"
 
     export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
     export FOX_USE_NANO_EDITOR=1
@@ -50,6 +50,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_HIDE_NOTCH=1
 	export OF_CLOCK_POS=1
 	export OF_ALLOW_DISABLE_NAVBAR=0
+    export OF_STATUS_H=42
+    export OF_STATUS_INDENT_LEFT=50
+    export OF_STATUS_INDENT_RIGHT=50
 	export OF_USE_SYSTEM_FINGERPRINT=1
     export FOX_ENABLE_APP_MANAGER=1
 	export FOX_USE_BASH_SHELL=1
@@ -57,6 +60,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_TAR_BINARY=1
 	export FOX_USE_SED_BINARY=1
 	export FOX_USE_XZ_UTILS=1
+    export FOX_USE_ZSTD_BINARY=1
 
 
 

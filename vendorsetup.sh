@@ -1,22 +1,15 @@
-#
-#	This file is part of the OrangeFox Recovery Project
-# 	Copyright (C) 2020-2021 The OrangeFox Recovery Project
-#
-#	OrangeFox is free software: you can redistribute it and/or modify
-#	it under the terms of the GNU General Public License as published by
-#	the Free Software Foundation, either version 3 of the License, or
-#	any later version.
-#
-#	OrangeFox is distributed in the hope that it will be useful,
-#	but WITHOUT ANY WARRANTY; without even the implied warranty of
-#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#	GNU General Public License for more details.
-#
-# 	This software is released under GPL version 3 or any later version.
-#	See <http://www.gnu.org/licenses/>.
-#
-# 	Please maintain this if you use this script or any part of it
-#
+#! /usr/bin/env bash
+# by rsuntk
+
+echo "Starting vendorsetup.sh"
+
+git clone https://github.com/rsuplaygrnd/android_recovery_samsung_mt6768-common.git device/samsung/mt6768-common
+
+patch -p1 --no-backup-if-mismatch < device/samsung/mt6768-common/patches/01*.patch
+patch -p1 --no-backup-if-mismatch < device/samsung/mt6768-common/patches/02*.patch
+
+echo "Patches applied."
+
 FDEVICE="a06"
 #set -o xtrace
 
@@ -42,7 +35,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
     export OF_MAINTAINER="IsaacCodesStuff"
 	export FOX_BUILD_TYPE="Unofficial"
-    export FOX_MAINTAINER_PATCH_VERSION="4"
+    export FOX_MAINTAINER_PATCH_VERSION="5"
 
     export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
     export FOX_USE_NANO_EDITOR=1
